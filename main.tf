@@ -1,6 +1,6 @@
 
 resource "tfe_workspace" "this" {
-  name         = "tenant-workspace1"
+  name         = "tenant-workspace"
   organization = var.tfe_organization
   #project_id = var.tfe_project_id
   # structured_run_output_enabled = false

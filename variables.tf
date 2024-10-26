@@ -40,3 +40,10 @@ variable "tag_names" {
     error_message = "Each tag name must contain only lowercase letters, numbers, colons, or hyphens."
   }
 }
+
+variable "TFE_TOKEN" {
+    description = "The TFE token"
+    type = string
+    sensitive = true
+  
+}
