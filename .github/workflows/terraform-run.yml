@@ -4,9 +4,10 @@ on:
   pull_request:
 
 env:
-  TF_CLOUD_ORGANIZATION: "YOUR-ORGANIZATION-HERE"
+  
+  TF_CLOUD_ORGANIZATION: "clearroute-ak"
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
-  TF_WORKSPACE: "learn-terraform-github-actions"
+  TF_WORKSPACE: "gha-workspace"
   CONFIG_DIRECTORY: "./"
 
 jobs:
