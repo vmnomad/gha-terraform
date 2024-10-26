@@ -45,11 +45,7 @@ jobs:
 
       - name: Print Plan Output
         run: | 
-          echo "Resources to be added:"
-          echo "${{ steps.plan-output.outputs.plan_output.add }}"
-
-          echo "Resources to be changed:"
-          echo "${{ steps.plan-output.outputs.plan_output.change }}"
-
-          echo "Resources to be destroyed:"
-          echo "${{ steps.plan-output.outputs.plan_output.destroy }}"
+          echo "Plan status: ${{ steps.plan-output.outputs.plan_status }}"
+          echo "Resources to Add: ${{ steps.plan-output.outputs.add }}"
+          echo "Resources to Change: ${{ steps.plan-output.outputs.change }}"
+          echo "Resources to Destroy: ${{ steps.plan-output.outputs.destroy }}"
