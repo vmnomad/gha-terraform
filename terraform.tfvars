@@ -1,0 +1,5 @@
+tfe_organization = "clearroute-ak"
+project_id = "prj-yDmLTDZQvJnq55os"
+workspace_name = "tenant-workspace"
+terraform_version = "1.9.7"
+tenant_name = "foo"
